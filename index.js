@@ -1,8 +1,7 @@
 const buttons = document.querySelectorAll('.button');
 const messageElement = document.getElementById('message');
 let messageDisplayed = false;
-
-const winningButtonIndex = getRandomNumber();
+let winningButtonIndex = getRandomNumber();
 
 function getRandomNumber() {
   return Math.floor(Math.random() * buttons.length);
@@ -24,6 +23,16 @@ function handleButtonClick(event) {
   }
 }
 
+function handleTryAgainClick() {
+  messageElement.textContent = '';
+  messageDisplayed = false;
+  winningButtonIndex = getRandomNumber();
+}
+
 buttons.forEach(button => {
   button.addEventListener('click', handleButtonClick);
 });
+
+const tryAgainButton = document.getElementById('try-again');
+tryAgainButton.addEventListener('click', handleTryAgainClick);
+
