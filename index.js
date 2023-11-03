@@ -2,7 +2,6 @@ const buttons = document.querySelectorAll('.button');
 const messageElement = document.getElementById('message');
 let messageDisplayed = false;
 
-// Generare index buton câștigător la încărcarea paginii
 const winningButtonIndex = getRandomNumber();
 
 function getRandomNumber() {
