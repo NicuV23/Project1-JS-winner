@@ -48,3 +48,4 @@ buttons.forEach(button => {
 });
 
 tryAgainButton.addEventListener('click', handleTryAgainClick);
+tryAgainButton.style.display = 'none';
