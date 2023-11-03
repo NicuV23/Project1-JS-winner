@@ -35,4 +35,3 @@ buttons.forEach(button => {
 
 const tryAgainButton = document.getElementById('try-again');
 tryAgainButton.addEventListener('click', handleTryAgainClick);
-
